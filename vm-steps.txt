@@ -1,0 +1,15 @@
+sudo apt update
+sudo apt install python3.7
+python3 --version
+sudo -H pip3 install --upgrade pip3
+
+wget https://download.redis.io/releases/redis-6.2.4.tar.gz
+tar xzf redis-6.2.4.tar.gz
+cd redis-6.2.4
+make
+
+cd
+git clone https://github.com/LucasKonrath/nd081-c4-azure-performance-project-starter
+cd nd081-c4-azure-performance-project-starter/
+pip install -r requirements.txt
+python3 main.py
